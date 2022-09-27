@@ -6,7 +6,7 @@
       "run": "g++ -std=c++11 main.cpp && ./a.out",
       "input": "20 100",
       "output": "[0.96]",
-      "comparison": "included",
+      "comparison": "regex",
       "timeout": 10,
       "points": 1
     },
