@@ -1,4 +1,3 @@
-// Complete the following program. 
 #include <iostream>
 using namespace std;
 
@@ -11,10 +10,23 @@ int main()
 	double total_charge;
 	double weight, distance, rate;
 
-	
-        // **********************
-        // Your code 
-        // **********************
-        
+	cout << "Enter the package weight and distance: ";
+	cin >> weight >> distance;
+
+	if (weight > 20 || distance < 10 || distance > 3000)
+	{
+		cout << "Wrong values\n";
+		return 0;
+	}
+
+	if (weight > 10)
+		rate = rate4;
+	else if (weight > 6)
+		rate = rate3;
+	else if (weight > 2)
+		rate = rate2;
+	else
+		rate = rate1;
+	total_charge = (distance / 500.00) * rate;
 	cout << total_charge << endl;
 }
